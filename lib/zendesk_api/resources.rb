@@ -116,6 +116,8 @@ module ZendeskAPI
       has User
     end
 
+    has :submitter, :class => User
+    
     has Forum
     has_many :comments, :class => TopicComment
     has_many :subscriptions, :class => TopicSubscription
